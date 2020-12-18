@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<?php
+	if (isset($_POST['Submit']))
+	{
+    $name = $_POST["fname"];
+    $email = $_Post
+    echo "Hi, ";echo $name; echo " , You're welcome to PHP";
+}
+?>
+<html>
+<head>
+	<title>Form</title>
+</head>
+
+
+
+<body>
+
+	<h1>Registration Form</h1>
+	<form name="myForm" method="post" action="">
+
+		
+		<label for="fname"> Name: *</label>
+		<input type="text" name="fname" id="fname" required ><br><br>
+	
+	
+		<label for="femail">EMail: *</label>
+		 <input type="email" name="femil" id="email" required><br><br>
+	
+	
+		<label for="fmobile">Mobile Number: *</label>
+		<input type="tel" name="fmobile" id="fmobile" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required><br><br>
+
+		<label for="fpassword">Password: *</label>
+		<input type="password" name="fpassword" id="fpassword" required><br><br>
+
+		<label for="fgender">Gender:*</label>
+		<input type="radio" name="fgender" id="fgender" value="male" required>Male
+		<input type="radio" name="fgender" id="fgender" value="female" required>Female<br><br>
+
+	
+		<input type="submit" name="Submit">
+	</form>
+
+	
+</body>
+</html>
