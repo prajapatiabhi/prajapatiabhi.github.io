@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-	<title>Facebook</title>
+	<title>Infonet Services</title>
+	<script type="text/javascript" src="Infonet.js"></script>
 </head>
-
-
-
 <body>
+	<h1>Infonet Services</h1>
+	<form id="usrform" >
+		<div class="Info">
+		<input type="text" id="first_name">First Name<br><br>
+		<input type="text" id="last_name">Last Name<br><br>
+		<input type="email" id="email">Email Address<br><br>
+		<input type="text" id="address">Address<br><br>
+		<input type="text" id="city">City<br><br>
+		<input type="text" id="state">State
+		<input type="text" id="postal">Postal Code
+		<input type="text" id="country">Country<br>
+	</div>
 
-	<h1>Sign Up</h1>
-	<form name="myForm" method="post" action="">
+	<div class="container">
+		<h2>Please Choose the most appropriate option</h2>
+		<input type="radio" name="item" id="item" value="I regularly purchase item online.">I regularly purchase item online.<br>
+		<input type="radio" name="item" id="item" value="I have on occasion purchase items online.">I have on occasion purchase items online.<br>
+		<input type="radio" name="item" id="item" value="I regularly purchase item online.">I regularly purchase item online.<br>
+		<input type="radio" name="item" id="item" value="I have not purchased anything online but i will consider it.">I have not purchased anything online but i will consider it.<br>
+		<input type="radio" name="item" id="item" value="I prefer to shop in real stores.">I prefer to shop in real stores.<br>
 
-		
-		<label for="fname">User Name: *</label>
-		<input type="text" name="fname" id="fname" required ><br><br>
-	
-	
-		<label for="femail">EMail: *</label>
-		 <input type="email" name="femil" id="email" required><br><br>
-	
-	
-		<label for="fmobile">Mobile Number: *</label>
-		<input type="tel" name="fmobile" id="fmobile" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required><br><br>
+	</div>
+	<div class="interest">
+		<h3>I'm interest in.(Choose all that apply)</h3>
+		<input type="checkbox" name="interest" value="Hiking" >Hiking<br>
+		<input type="checkbox" name="interest" value="Mountain Biking">Mountain Biking<br>
+		<input type="checkbox" name="interest" value="Camping">Camping<br>
+		<input type="checkbox" name="interest" value="Rock Climbing">Rock Climbing<br>
+		<input type="checkbox" name="interest" value="Off Road 4-WD">Off Road 4-WD<br>
+		<input type="checkbox" name="interest" value="Cross-conutry Skiing">Cross-conutry Skiing<br>
+	</div>
+	<div class="site">
+		<h3> I learned about this site from:</h3>
+		<select name="site">
+		<option value="Pop-up Ads">Pop-up Ads</option>
+		<option value="From Friends">From Friends</option>
+		<option value="I always purchase form this site">I always purchase form this site</option>
+		<option value="I am knowledgeable.">I am knowledgeable.</option>
+	</select>
+	</div>
 
-		<label for="fpassword">Password: *</label>
-		<input type="password" name="fpassword" id="fpassword" required><br><br>
-
-		<label for="fgender">Gender:*</label>
-		<input type="radio" name="fgender" id="fgender" value="male" required>Male
-		<input type="radio" name="fgender" id="fgender" value="female" required>Female<br><br>
-
-	
-		<input type="submit" name="Submit">
+	<div class="Comments">
+		<h3>Comment:</h3>
+		<textarea rows="10" cols="50" id="comment" placeholder="Please type a comment here."></textarea>
+	</div>
+	<button type="submit" onclick="check_validity();return false;">Submit</button>
+	<button onclick="refresh()">Start Over</button>
 	</form>
-
-	
 </body>
 </html>
