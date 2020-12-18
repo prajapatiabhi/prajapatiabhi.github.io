@@ -16,7 +16,7 @@ function print_values()
             	  "Email:"+document.getElementById('email').value+"\n"+
             	  "Address: "+document.getElementById('address').value+"\n"+
             	  "City: "+document.getElementById('city').value+"\n"+
-            	  "State: "+document.getElementById('state').value+"\n"+
+            	  "Statte: "+document.getElementById('state').value+"\n"+
             	  "Postal: "+document.getElementById('postal').value+"\n"+
             	  "Country: "+document.getElementById('country').value+"\n"+
             	  "Option: "+document.getElementById('item').value+"\n"+
